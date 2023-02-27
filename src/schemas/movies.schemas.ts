@@ -10,3 +10,5 @@ export const movieCreateSchema = z.object({
 export const movieCreatedSchema = movieCreateSchema.extend({
     id: z.number()
 })
+
+export const movieUpdateSchema = movieCreateSchema.partial()
