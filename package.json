@@ -4,7 +4,9 @@
   "description": "Para essa entrega, é necessário executar testes automatizados.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "ts-node-dev --cls --rs --ignore-watch node_modules src/server.ts",
+    "typeorm": "typeorm-ts-node-commonjs"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
