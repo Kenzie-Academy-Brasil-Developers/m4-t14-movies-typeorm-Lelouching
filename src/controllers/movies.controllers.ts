@@ -1,7 +1,7 @@
 import { createMovieService } from "./../services/createMovie.service"
 import { getMoviesService } from "./../services/getMovies.service"
-import { Request, Response } from "express";
-import { deleteMovieService } from "../services/deleteMovie.service";
+import { Request, Response } from "express"
+import { deleteMovieService } from "../services/deleteMovie.service"
 
 export const createMovie = async (req: Request, res: Response): Promise<Response> => {
     const movie = await createMovieService(req.body)
@@ -10,7 +10,7 @@ export const createMovie = async (req: Request, res: Response): Promise<Response
 }
 
 export const getMovies = async (req: Request, res: Response): Promise<Response> => {
-    const movies = await getMoviesService(Number(req.query.page), Number(req.query.perPage))
+    const movies = await getMoviesService(Number(req.query.page), Number(req.query.perPage), String(req.query.order), String(req.query.sort))
 
     return res.status(200).json(movies)
 }
