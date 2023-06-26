@@ -1,3 +1,3 @@
-# m4-t14-movies-typeorm
+# Movies TypeOrm
 
-Para essa entrega, é necessário executar testes automatizados.
+Projeto que consiste em um crud de filmes feito com TypeOrm, onde você pode criar um filme com suas informações e preço, atualizar, deletar e obter todos. Além de ter vários middlewares fazendo várias verificações para cada requisição.
